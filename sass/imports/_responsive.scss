@@ -1,0 +1,129 @@
+@media screen and (max-width: 992px) {
+	section.gradebook {
+		.gradebook-nav {
+			grid-template-columns: 250px auto;
+
+			.semesters-titles {
+				.semester-box {
+					h3 {
+						font-size: 16px;
+					}
+				}
+			}
+		}
+
+		.content {
+			.gradebook-grid {
+				grid-template-columns: 250px auto;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	section.children-navbar {
+		.content {
+			display: block;
+
+			.exact-child {
+				margin-bottom: 25px;
+			}
+		}
+	}
+
+	section.statistics {
+		.content {
+			.statistics-box {
+				margin-bottom: 25px;
+			}
+		}
+	}
+
+	section.gradebook {
+		.container {
+			overflow: scroll;
+
+			.content {
+				width: 776px;
+			}
+
+			.gradebook-nav {
+				width: 776px;
+			}
+		}
+	}
+
+	section.homework {
+		.container {
+			.content {
+				overflow: scroll;
+
+				.canvas {
+					width: 776px;
+				}
+
+				.homework-dropdown {
+					select {
+						margin-inline-end: auto;
+						margin-inline-start: 0;
+						padding-inline-start: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 575px) {
+	header {
+		.content {
+			.icons-area {
+				.bell-icon {
+					margin-inline-end: 15px;
+				}
+			}
+		}
+	}
+
+	section.children-navbar {
+		.content {
+			.all-childrens {
+				flex-direction: column;
+
+				.all-childrens-content {
+					order: 2;
+					width: 100%;
+					display: grid;
+					grid-template-columns: repeat(2, calc(50% - 7.5px));
+					gap: 15px;
+				}
+
+				.child-box {
+					margin-inline-end: 0 !important;
+				}
+
+				.add-child {
+					margin-bottom: 25px;
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	section.attendence .content,
+	section.homework .content,
+	section.statistics .content {
+		padding: 15px;
+	}
+
+	footer {
+		.content {
+			display: block;
+			text-align: center;
+
+			.footer-logo {
+				margin-bottom: 15px;
+			}
+		}
+	}
+}

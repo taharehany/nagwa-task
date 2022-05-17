@@ -1,0 +1,543 @@
+section.children-navbar .content .all-childrens .all-childrens-content .child-box .image img, section.children-navbar .content .exact-child .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -o-object-fit: cover;
+}
+
+section.gradebook .main-title, section.attendence .main-title, section.homework .main-title, section.statistics .main-title {
+  margin-bottom: 15px;
+}
+section.gradebook .main-title h2, section.attendence .main-title h2, section.homework .main-title h2, section.statistics .main-title h2 {
+  font-size: 20px;
+  color: #333333;
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+}
+section.gradebook .main-title h2::before, section.attendence .main-title h2::before, section.homework .main-title h2::before, section.statistics .main-title h2::before {
+  height: 29px;
+  width: 9px;
+  border-radius: 5px;
+  background-color: #AE7129;
+  content: "";
+  display: inline-block;
+  margin-inline-end: 10px;
+}
+
+section.attendence .content, section.homework .content, section.statistics .content {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  border: 1px solid #E9E9E9;
+}
+
+body {
+  background-color: #FBFBFC;
+  font-family: "Noto Sans", sans-serif;
+}
+
+header {
+  padding: 30px 0;
+  background-color: #FBFBFC;
+}
+header .content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+header .content .logo-area a {
+  color: #333333;
+  text-decoration: none;
+}
+header .content .logo-area img {
+  width: 50px;
+  margin-inline-end: 15px;
+}
+header .content .logo-area .slogan {
+  font-size: 14px;
+}
+header .content .icons-area {
+  display: flex;
+}
+header .content .icons-area .icon {
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+header .content .icons-area .icon:hover, header .content .icons-area .icon:focus {
+  box-shadow: none;
+}
+header .content .icons-area .icon i {
+  padding: 0;
+  display: inline-block;
+  text-align: center;
+  line-height: 45px;
+  height: 45px;
+  width: 45px;
+  background-color: #fff;
+  border-radius: 13px;
+  border: 1px solid #EBEBEB;
+  font-size: 16px;
+  color: #026BB0;
+}
+header .content .icons-area .bell-icon {
+  margin-inline-end: 25px;
+}
+header .content .icons-area .bell-icon i {
+  position: relative;
+}
+header .content .icons-area .bell-icon .badge-icon {
+  background-color: #FF3C3C;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  padding: 0;
+  border: 2px solid #fff;
+}
+header .content .icons-area .user-icon .dropdown-toggle::after {
+  margin-inline-end: 10px;
+  color: #969696;
+  font-size: 23px;
+}
+header .content .icons-area .user-icon .dropdown-menu {
+  border: 1px solid #EBEBEB;
+  border-radius: 10px;
+}
+
+section.children-navbar {
+  padding: 30px 0;
+  background-color: #fff;
+}
+section.children-navbar .content {
+  display: flex;
+  justify-content: space-between;
+}
+section.children-navbar .content .exact-child {
+  display: grid;
+  grid-template-columns: 80px auto;
+  gap: 10px;
+  align-items: center;
+}
+section.children-navbar .content .exact-child .image {
+  margin-inline-end: 10px;
+  height: 80px;
+  width: 80px;
+  overflow: hidden;
+}
+section.children-navbar .content .exact-child .image img {
+  border-radius: 10px;
+}
+section.children-navbar .content .exact-child .name h2 {
+  font-weight: 600;
+  font-size: 24px;
+  color: #333333;
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+section.children-navbar .content .all-childrens {
+  display: flex;
+  align-items: center;
+}
+section.children-navbar .content .all-childrens .all-childrens-content {
+  display: flex;
+}
+section.children-navbar .content .all-childrens .all-childrens-content .child-box {
+  display: grid;
+  grid-template-columns: 32px auto;
+  gap: 10px;
+  align-items: center;
+  border: 1px solid #F0F0F1;
+  border-radius: 10px;
+  padding: 7px;
+  padding-inline-end: 15px;
+  margin-inline-end: 15px;
+  cursor: pointer;
+}
+section.children-navbar .content .all-childrens .all-childrens-content .child-box.active {
+  background-color: rgba(2, 107, 176, 0.1);
+}
+section.children-navbar .content .all-childrens .all-childrens-content .child-box.active .name h3 {
+  color: #026BB0;
+}
+section.children-navbar .content .all-childrens .all-childrens-content .child-box .image {
+  margin-inline-end: 10px;
+  height: 32px;
+  width: 32px;
+  overflow: hidden;
+}
+section.children-navbar .content .all-childrens .all-childrens-content .child-box .image img {
+  border-radius: 5px;
+}
+section.children-navbar .content .all-childrens .all-childrens-content .child-box .name h3 {
+  font-size: 16px;
+  color: #333333;
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+section.children-navbar .content .add-child {
+  border-radius: 10px;
+  border: 1px solid #026BB0;
+  color: #026BB0;
+  padding: 10px 25px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all ease 0.3s;
+}
+section.children-navbar .content .add-child:hover {
+  background-color: #026BB0;
+  color: #fff;
+}
+section.children-navbar .content .add-child i {
+  margin-inline-end: 5px;
+}
+
+section.statistics {
+  padding: 50px 0;
+}
+section.statistics .content .statistics-box {
+  display: block;
+  text-align: center;
+}
+section.statistics .content .statistics-box .circle {
+  width: 76px;
+  height: 76px;
+  margin: 0 auto;
+  display: inline-block;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+section.statistics .content .statistics-box .circle canvas {
+  vertical-align: middle;
+  border-radius: 50%;
+}
+section.statistics .content .statistics-box .circle .number {
+  position: absolute;
+  left: auto;
+  top: auto;
+  width: 100%;
+  font-size: 18px;
+}
+section.statistics .content .statistics-box .circle .number .percentage-sign {
+  font-size: 14px;
+}
+section.statistics .content .statistics-box .percentage {
+  color: #333333;
+  font-size: 16px;
+  text-transform: capitalize;
+  display: block;
+  line-height: 2;
+}
+section.statistics .content .statistics-box .title {
+  color: #333333;
+  font-size: 16px;
+  text-transform: capitalize;
+  display: block;
+}
+
+section.homework {
+  padding: 50px 0;
+}
+section.homework .main-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section.homework .main-title h2 {
+  margin-bottom: 0;
+}
+section.homework .main-title .all-homeworks-btn .btn {
+  border-radius: 10px;
+  border: 1px solid #E8E8E8;
+  background-color: #fff;
+  padding: 7px 15px;
+  color: #026BB0;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+section.homework .main-title .all-homeworks-btn .btn i {
+  font-size: 14px;
+}
+section.homework .content .homework-dropdown select {
+  width: auto;
+  margin-inline-end: 0;
+  margin-inline-start: auto;
+  border: 0;
+  padding-inline-end: 20px;
+  background-position: right 0rem center;
+}
+section.homework .content .homework-dropdown select:focus {
+  box-shadow: none;
+}
+
+section.attendence {
+  padding: 50px 0;
+}
+section.attendence .content .calendar-header {
+  text-align: end;
+  margin-bottom: 20px;
+}
+section.attendence .content .calendar-header .calendar-header-content {
+  width: auto;
+  text-align: center;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 250px;
+}
+section.attendence .content .calendar-header h3 {
+  font-weight: 500;
+  font-size: 18px;
+  color: #333333;
+  display: inline-block;
+  white-space: nowrap;
+  margin-bottom: 0;
+}
+section.attendence .content .calendar-header .switch-month {
+  background-color: #fff;
+  padding: 0;
+  border: 1px solid #E8E8E8;
+  color: #026BB0;
+  width: 38px;
+  height: 38px;
+  transition: all 0.2s;
+  border-radius: 10px;
+}
+section.attendence .content .img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+section.attendence .content .calendar,
+section.attendence .content .calendar-weekdays,
+section.attendence .content .calendar-content {
+  max-width: 100%;
+}
+section.attendence .content .calendar {
+  margin: auto;
+  font-weight: 400;
+}
+section.attendence .content .calendar-content {
+  background: #fff;
+  display: grid;
+  grid-template-columns: repeat(7, calc((100% / 7) - 5px));
+  gap: 5px;
+}
+section.attendence .content .calendar-content div {
+  border-radius: 5px;
+}
+section.attendence .content .calendar-content div:not(.blank) {
+  background-color: rgba(120, 181, 23, 0.1);
+}
+section.attendence .content .calendar-weekdays {
+  background: transparent;
+  display: grid;
+  grid-template-columns: repeat(7, calc(100% / 7));
+}
+section.attendence .content .calendar-content,
+section.attendence .content .calendar-weekdays,
+section.attendence .content .calendar-header {
+  position: relative;
+  overflow: hidden;
+}
+section.attendence .content .calendar-weekdays div,
+section.attendence .content .calendar-content div {
+  overflow: hidden;
+  text-align: center;
+  color: #000;
+  font-size: 16px;
+  padding: 15px 0;
+}
+section.attendence .content .calendar-content div.past-date {
+  background-color: rgba(229, 29, 29, 0.1);
+}
+section.attendence .content .calendar-content div.selected {
+  background-color: #f0f0f0;
+}
+
+section.gradebook {
+  padding: 50px 0;
+}
+section.gradebook .gradebook-nav {
+  display: grid;
+  grid-template-columns: 350px auto;
+  align-items: center;
+}
+section.gradebook .gradebook-nav .semesters-titles {
+  display: grid;
+  grid-template-columns: repeat(4, calc(100% / 4));
+  text-align: center;
+}
+section.gradebook .gradebook-nav .semesters-titles .semester-box h3 {
+  font-size: 18px;
+  color: #333333;
+  text-transform: capitalize;
+}
+section.gradebook .content span {
+  font-size: 16px;
+  color: #333333;
+  text-transform: capitalize;
+}
+section.gradebook .content .gradebook-grid {
+  display: grid;
+  grid-template-columns: 350px auto;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+section.gradebook .content .gradebook-grid .gradebook-subjects {
+  background-color: #fff;
+  border-radius: 20px;
+  border: 1px solid #E9E9E9;
+  padding: 0 20px;
+}
+section.gradebook .content .gradebook-grid .gradebook-subjects .subjects-box {
+  padding: 20px 0;
+  border-bottom: 1px solid #E9E9E9;
+}
+section.gradebook .content .gradebook-grid .gradebook-subjects .subjects-box:last-child {
+  border-bottom: 0;
+}
+section.gradebook .content .gradebook-grid .grades {
+  display: grid;
+  grid-template-columns: repeat(4, calc((100% / 4) - 5px));
+  gap: 5px;
+}
+section.gradebook .content .gradebook-grid .grades .grades-column {
+  background-color: #fff;
+  border-radius: 20px;
+  border: 1px solid #E9E9E9;
+  padding: 0 20px;
+}
+section.gradebook .content .gradebook-grid .grades .grades-column .grades-box {
+  padding: 20px 0;
+  border-bottom: 1px solid #E9E9E9;
+  text-align: center;
+}
+section.gradebook .content .gradebook-grid .grades .grades-column .grades-box:last-child {
+  border-bottom: 0;
+}
+section.gradebook .content .gradebook-grid .grades .grades-column .grades-box .actual-grade.less {
+  color: #FF0000;
+}
+section.gradebook .content .gradebook-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 20px;
+  border: 1px solid #E9E9E9;
+  padding: 20px;
+}
+section.gradebook .content .gradebook-footer .total-mark {
+  padding-inline-start: 25px;
+  border-inline-start: 1px solid #E9E9E9;
+}
+
+footer {
+  background-color: #fff;
+  padding: 30px 0;
+}
+footer .content {
+  display: flex;
+  justify-content: space-between;
+}
+footer .content .footer-logo img {
+  width: 85px;
+}
+footer .content .footer-copyrights p {
+  margin-bottom: 0;
+  font-size: 16px;
+  color: #707070;
+}
+
+@media screen and (max-width: 992px) {
+  section.gradebook .gradebook-nav {
+    grid-template-columns: 250px auto;
+  }
+  section.gradebook .gradebook-nav .semesters-titles .semester-box h3 {
+    font-size: 16px;
+  }
+  section.gradebook .content .gradebook-grid {
+    grid-template-columns: 250px auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  section.children-navbar .content {
+    display: block;
+  }
+  section.children-navbar .content .exact-child {
+    margin-bottom: 25px;
+  }
+
+  section.statistics .content .statistics-box {
+    margin-bottom: 25px;
+  }
+
+  section.gradebook .container {
+    overflow: scroll;
+  }
+  section.gradebook .container .content {
+    width: 776px;
+  }
+  section.gradebook .container .gradebook-nav {
+    width: 776px;
+  }
+
+  section.homework .container .content {
+    overflow: scroll;
+  }
+  section.homework .container .content .canvas {
+    width: 776px;
+  }
+  section.homework .container .content .homework-dropdown select {
+    margin-inline-end: auto;
+    margin-inline-start: 0;
+    padding-inline-start: 0;
+  }
+}
+@media screen and (max-width: 575px) {
+  header .content .icons-area .bell-icon {
+    margin-inline-end: 15px;
+  }
+
+  section.children-navbar .content .all-childrens {
+    flex-direction: column;
+  }
+  section.children-navbar .content .all-childrens .all-childrens-content {
+    order: 2;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, calc(50% - 7.5px));
+    gap: 15px;
+  }
+  section.children-navbar .content .all-childrens .child-box {
+    margin-inline-end: 0 !important;
+  }
+  section.children-navbar .content .all-childrens .add-child {
+    margin-bottom: 25px;
+    width: 100%;
+  }
+
+  section.attendence .content,
+section.homework .content,
+section.statistics .content {
+    padding: 15px;
+  }
+
+  footer .content {
+    display: block;
+    text-align: center;
+  }
+  footer .content .footer-logo {
+    margin-bottom: 15px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
